@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                out.setText("");
                 try{
                     double dis = Double.parseDouble(distance.getText().toString());
                     double tm = Double.parseDouble(second.getText().toString());
