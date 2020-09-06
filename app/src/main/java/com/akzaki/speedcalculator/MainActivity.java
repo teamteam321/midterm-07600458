@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 distance.setText("");
                 second.setText("");
+                out.setText("");
             }
         });
         calculate.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     dis /= 1000;
                     tm /= 3600;
                     double out_spd = dis/tm;
-                    out.setText(String.format("%.2f",out_spd));
+                    //out.setText(String.format("%.2f",out_spd));
+                    out.setText(String.format(Locale.getDefault(), "%.2f", out_spd));
                     if(out_spd > 80.0){
                         AlertDialog.Builder result_a = new AlertDialog.Builder(MainActivity.this);
                         result_a.setTitle("SPEED CALCULATOR");
@@ -53,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 }catch(Exception e){
                     Toast msg = Toast.makeText(MainActivity.this, R.string.distance_time_required,Toast.LENGTH_LONG);
                     msg.show();
-                    return;
                 }
 
             }
