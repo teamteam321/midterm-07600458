@@ -7,7 +7,7 @@
     <string name="calculate">คำนวณ</string>
     <string name="enter_time_second">กรอกเวลา (วินาที)</string>
     <string name="speed_calculator">SPEED CALCULATOR</string>
-    <string name="distance_time_required">Distence and time are required.</string>
+    <string name="distance_time_required">ต้องกรอกระยะทางและเวลา</string>
     <string name="time_greater_zero">Time must be grater than zero.</string>
     <string name="over_limit">ความเร็วเกินกำหนด!</string>
 </resources>

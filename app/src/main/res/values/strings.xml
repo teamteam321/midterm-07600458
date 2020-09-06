@@ -6,7 +6,7 @@
     <string name="average_speed_km_h">Average Speed (km/h)</string>
     <string name="clear">Clear</string>
     <string name="calculate">Calculate</string>
-    <string name="distance_time_required">Distence and time are required.</string>
-    <string name="time_greater_zero">Time must be grater than zero.</string>
+    <string name="distance_time_required">Distance and time are required.</string>
+    <string name="time_greater_zero">Time must be greater than zero.</string>
     <string name="over_limit">Speed is over limit!</string>
 </resources>
